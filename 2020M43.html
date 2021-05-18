@@ -10,6 +10,7 @@
 
         th {
             height: 70px;
+            text-align: center;
         }
 
         td {
@@ -17,19 +18,41 @@
             border-collapse: collapse;
             padding: 10px;
         }
+
+        table,
+        td,
+        th {
+            border: 2px solid black;
+        }
+
+        .table_style {
+            color: coral;
+        }
+
+        td {
+            padding: 18px;
+        }
+
+        div.table_style {
+            color: cornflowerblue;
+            background-color: darkgoldenrod;
+        }
     </style>
 </head>
 
 <body>
 
-
-    <h2>The table example</h2>
+    <h2 class="table_style">The table example</h2>
     <table>
         <tr>
-            <th colspan="2"> Header Section</th>
+            <th colspan="2">
+                <div class="table_style"> Header Section </div>
+            </th>
         </tr>
         <tr>
-            <td colspan="2">Navigation Bar</td>
+            <td colspan="2">
+                <div class="table_style"> Navigation bar </div>
+            </td>
         </tr>
         <tr>
             <td>Index</td>
