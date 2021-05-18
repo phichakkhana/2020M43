@@ -1,0 +1,90 @@
+.flex-container{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.inline-flex-container{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.bg-red{
+    background-color: brown;
+}
+
+.bg-blue{
+    background-color: skyblue;
+}
+
+.flex-container>div{
+    background-color: darkgrey;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 600px;
+}
+
+.inline-flex-container>div{
+    background-color: lightgray;
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+    width: 70px;
+}
+
+.d1{
+    order:1;
+    flex-basis: 800px;
+}
+
+.d2{
+    order: 1;
+    flex-basis: 400px;
+}
+
+.d3{
+    order: 2;
+    flex-basis: 100px;
+}
+
+.mainPanel{
+    display:flex ;
+    flex-flow: column nowrap;
+}
+
+.mainMenu{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.mainMenu>div{
+    padding: 5px;
+    margin: 10px;
+    background-color: gray;
+}
+
+.contentPanel{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.leftMenu{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 300px;
+}
+
+.leftMenu>div{
+    padding: 5px;
+    margin: 10px;
+    background-color: gray;
+} 
+
+.content{
+    flex-grow: 1;
+}
+
+div{
+    border: 1px solid black;
+}
